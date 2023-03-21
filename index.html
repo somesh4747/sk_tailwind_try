@@ -1,52 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/dist/output.css" rel="stylesheet" />
-    <title>Document</title>
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-  </head>
-  <body class="">
-    <header class=" px-6 py-5 w-full text-3xl font-semibold mb-4 md:m-0 text-violet-600">
-      Sk
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>somesh fitness website</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link
+            rel="stylesheet"
+            href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+        />
+        <link
+            rel="stylesheet"
+            href="dist/output.css"
+        />
+    </head>
+    <body class="bg-gray-200">
+        <!-- header part -->
+        <header>
+            <nav
+                id="nav"
+                class="w-full md:h-20 h-20 overflow-hidden flex flex-col md:flex-row md:justify-between md:items-center p-6 sticky top-0 border-black border-2 space-y-4 md:space-y-0 transition-all duration-500 ease-in-out"
+            >
+                <div class="flex justify-between relative items-center">
+                    <a href="#" class="text-3xl">Fitnesso</a>
+                    <!-- <button class="md:hidden" id="ham">hamberger</button> -->
+                    <div id="ham" class="cursor-pointer relative md:hidden" >
+                        <span class="ham-hh"></span>
+                        <span class="ham-hh"></span>
+                        <span class="ham-hh"></span>
 
-    <main>
-      <!-- section one -->
-      <section
-        class=" px-6 py-5 section-one gap-10 flex flex-col md:flex-row md:items-center md:justify-between md:max-h-[488px] mb-5"
-      >
-        <!-- hero part left -->
-        <div class=" mb-6 md:mt-[85px]">
-          <h1 class="text-5xl font-semibold ">
-            Join me at <br />
-            the biggest
-            <span class="text-violet-600 ">Fontend </span> Development Contest
-          </h1>
-        </div>
-        <!-- hero part right -->
-        <div class=" md:max-w-[488px] rounded-full overflow-hidden ">
-          <img class="" src="people.jpg" alt="" />
-        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col md:flex-row justify-between items-center md:space-x-12 space-y-4 md:space-y-0"
+                    id="nav"
+                >
+                    <a href="#" class="hover:text-gray-600 duration-100 ease-in"
+                        >About</a
+                    >
+                    <a href="#" class="hover:text-gray-600 duration-100 ease-in"
+                        >Free Workout</a
+                    >
+                    <a href="#" class="hover:text-gray-600 duration-100 ease-in"
+                        >Shop</a
+                    >
+                    <a
+                        href="#"
+                        class="uppercase bg-blue-900 text-white p-2 w-[120px] hover:w-40 duration-300 transition-all ease-in-out rounded-xl text-center font-bold"
+                        >book a Call</a
+                    >
+                    <a
+                        href="#"
+                        class="hover:text-gray-600 duration-100 ease-in md:pr-3 "
+                        ><i class="uil uil-shopping-cart text-3xl"></i>
+                        <div class="absolute h-32 w-32 bg-white">
 
-      </section>
+                        </div>
+                    </a>
+                </div>
+            </nav>
+        </header>
 
+        <main></main>
 
-	  <!-- form section -->
-          <section class="bg-violet-600 flex flex-col justify-center items-center h-[50vh]  mt-11 md:mt-32 ease-in duration-200">
-              <form action="" class="relative flex flex-col items-center text-center p-6 bg-white top-[-100px] border-2  rounded-lg shadow-2xl w-[80vw] gap-2 md:w-[35vw]">
-                <div class="w-20 h-20 rounded-full  overflow-hidden"><img src="people.jpg" alt=""></div>
-                <input type="email" name="email" id="form-mail" placeholder="Enter your email" class="border border-gray-400 px-3 py-2 rounded-md hover:border-emerald-500 hover:border-2  w-full">
-                <button type="reset" class="px-3 py-2 bg-violet-600 text-white rounded-md w-full" >Click to Subscribe</button>
-              </form>
-              <footer class="text-white">
-                <p>&copy; Somesh Karmakar || 2023 </p>
-              </footer>
-          </section>
-    </main>
-
-    <!-- <script src="app.js"></script> -->
-  </body>
+        <script src="app.js"></script>
+    </body>
 </html>
