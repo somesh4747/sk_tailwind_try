@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 /*
-! tailwindcss v3.2.7 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.1 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -33,6 +33,7 @@
 3. Use a more readable tab size.
 4. Use the user's configured `sans` font-family by default.
 5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
 */
 
 html {
@@ -45,10 +46,12 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Open Sans, sans-serif;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
 }
 
 /*
@@ -421,10 +424,6 @@ video {
   display: none;
 }
 
-body {
-  font-family: "Fira Sans", sans-serif;
-}
-
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -535,6 +534,26 @@ body {
   top: 0px;
 }
 
+.top-\[-47\]{
+  top: -47;
+}
+
+.top-\[-47px\]{
+  top: -47px;
+}
+
+.top-\[\]{
+  top: ;
+}
+
+.top-\[-20px\]{
+  top: -20px;
+}
+
+.top-\[-30px\]{
+  top: -30px;
+}
+
 .block{
   display: block;
 }
@@ -547,20 +566,20 @@ body {
   height: 5rem;
 }
 
-.h-32{
-  height: 8rem;
-}
-
 .h-\[320px\]{
   height: 320px;
 }
 
-.w-32{
-  width: 8rem;
+.h-\[49rem\]{
+  height: 49rem;
 }
 
-.w-\[120px\]{
-  width: 120px;
+.h-auto{
+  height: auto;
+}
+
+.w-\[130px\]{
+  width: 130px;
 }
 
 .w-full{
@@ -583,8 +602,20 @@ body {
   align-items: center;
 }
 
+.justify-center{
+  justify-content: center;
+}
+
 .justify-between{
   justify-content: space-between;
+}
+
+.gap-3{
+  gap: 0.75rem;
+}
+
+.gap-5{
+  gap: 1.25rem;
 }
 
 .space-y-4 > :not([hidden]) ~ :not([hidden]){
@@ -597,17 +628,12 @@ body {
   overflow: hidden;
 }
 
+.rounded-2xl{
+  border-radius: 1rem;
+}
+
 .rounded-xl{
   border-radius: 0.75rem;
-}
-
-.border-2{
-  border-width: 2px;
-}
-
-.border-black{
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .bg-blue-900{
@@ -618,11 +644,6 @@ body {
 .bg-gray-200{
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
-}
-
-.bg-white{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .p-2{
@@ -642,6 +663,21 @@ body {
   line-height: 2.25rem;
 }
 
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -650,9 +686,26 @@ body {
   text-transform: uppercase;
 }
 
+.leading-10{
+  line-height: 2.5rem;
+}
+
+.text-blue-900{
+  --tw-text-opacity: 1;
+  color: rgb(30 58 138 / var(--tw-text-opacity));
+}
+
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.opacity-10{
+  opacity: 0.1;
+}
+
+.opacity-50{
+  opacity: 0.5;
 }
 
 .transition{
@@ -725,6 +778,10 @@ body {
   opacity: 0;
 }
 
+.fancy-font{
+  font-family: 'Delicious Handrawn', cursive;
+}
+
 .hover\:w-40:hover{
   width: 10rem;
 }
@@ -734,13 +791,51 @@ body {
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
+@media (min-width: 640px){
+  .sm\:ml-5{
+    margin-left: 1.25rem;
+  }
+
+  .sm\:gap-2{
+    gap: 0.5rem;
+  }
+}
+
 @media (min-width: 768px){
+  .md\:right-\[500px\]{
+    right: 500px;
+  }
+
+  .md\:top-\[-47px\]{
+    top: -47px;
+  }
+
   .md\:hidden{
     display: none;
   }
 
   .md\:h-20{
     height: 5rem;
+  }
+
+  .md\:h-full{
+    height: 100%;
+  }
+
+  .md\:w-\[35rem\]{
+    width: 35rem;
+  }
+
+  .md\:w-\[40rem\]{
+    width: 40rem;
+  }
+
+  .md\:max-w-\[50\%\]{
+    max-width: 50%;
+  }
+
+  .md\:max-w-none{
+    max-width: none;
   }
 
   .md\:flex-row{
@@ -751,8 +846,20 @@ body {
     align-items: center;
   }
 
+  .md\:justify-center{
+    justify-content: center;
+  }
+
   .md\:justify-between{
     justify-content: space-between;
+  }
+
+  .md\:gap-0{
+    gap: 0px;
+  }
+
+  .md\:gap-6{
+    gap: 1.5rem;
   }
 
   .md\:space-x-12 > :not([hidden]) ~ :not([hidden]){
@@ -767,7 +874,23 @@ body {
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
+  .md\:space-y-8 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+  }
+
   .md\:pr-3{
     padding-right: 0.75rem;
+  }
+
+  .md\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
